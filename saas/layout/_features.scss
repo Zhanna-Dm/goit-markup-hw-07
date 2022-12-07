@@ -3,30 +3,30 @@
 .description {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    & h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
 }
 
 .description-blocks {
     display: flex;
-}
 
-.description-blocks li:not(:last-child) {
-    margin-right: 30px;
-}
+    & li:not(:last-child) {
+        margin-right: 30px;
+    }
+    
+    & div {
+        height: 120px;
 
-.description-blocks div {
-    height: 120px;
-
-    background-color: var(--background-third-color);
-    display: flex;
-    background-position: contain;
-    align-items: center;
-    justify-content: center;
-}
-
-.description h3 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    text-align: left;
+        background-color: var(--background-third-color);
+        display: flex;
+        background-position: contain;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .description-title {

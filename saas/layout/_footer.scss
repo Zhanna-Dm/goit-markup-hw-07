@@ -19,33 +19,38 @@ address {
 
 .contacts-footer-item {
     margin-top: 9px;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(24 / 14);
+        letter-spacing: 0.03em;
+
+        & a {
+            color: rgba(255, 255, 255, 0.6);
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 }
 
-.contacts-footer-item,
 .contact-footer-address {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
+
+    & a:visited,
+    & a:link,
+    & a:active {
+        color: floralwhite;
+     }
+    
+     & a:hover,
+     & a:focus {
+         color: var(--link-hover-color);
+     }
 }
 
-.contacts-footer-item a {
-    color: rgba(255, 255, 255, 0.6);
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-footer-address a:visited,
-.contact-footer-address a:link,
-.contact-footer-address a:active {
-    color: floralwhite;
-}
-
-.contact-footer-address a:hover,
-.contact-footer-address a:focus {
-    color: var(--link-hover-color);
-}
 
 /* Footer social icons */
 
@@ -56,12 +61,12 @@ address {
 
 .footer-block-soclinks {
     margin-left: 70px;
-}
 
-.footer-block-soclinks .social-icons {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    & .social-icons {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 .footer .social-link {
@@ -91,11 +96,11 @@ address {
 
 .footer .social-link {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer .social-link:hover,
-.footer .social-link:focus {
-    background-color: var(--link-hover-color);
+    &:hover,
+    &:focus {
+        background-color: var(--link-hover-color);
+    }
 }
 
 .footer-block-item p {
@@ -116,44 +121,45 @@ address {
 
 .subscription-line {
     display: flex;
+
+    & .form-field {
+        margin-right: 12px;
+    }
+
+    & label {
+        margin: 0;
+    }
+
+    & input {
+        width: 358px;
+        height: 50px;
+        padding: 15px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(20 / 16);
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+
+        background-color: var(--background-second-color);
+    }
+
+    & input::placeholder {
+        display: flex;
+        align-items: center;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(20 / 16);
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
-.subscription-line .form-field {
-    margin-right: 12px;
-}
-
-.subscription-line label {
-    margin: 0;
-}
-
-.subscription-line input {
-    width: 358px;
-    height: 50px;
-    padding: 15px;
-
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-
-    background-color: var(--background-second-color);
-}
-
-.subscription-line input::placeholder {
-    display: flex;
-    align-items: center;
-
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
 
 .subscribe-button {
     display: flex;
@@ -172,12 +178,13 @@ address {
 
     background-color: var(--link-hover-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--button-hover-background);
+    }
 }
 
-.subscribe-button:hover,
-.subscribe-button:focus {
-    background-color: var(--button-hover-background);
-}
 
 .subscription-icon {
     margin-left: 10px;
