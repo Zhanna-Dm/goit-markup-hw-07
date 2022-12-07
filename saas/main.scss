@@ -1,0 +1,20 @@
+//BASE
+@import "./base/variables.scss";
+@import "./base/base.scss";
+
+//UTILS
+@import "./utils/visually-hidden";
+
+//COMPONENTS
+@import "./components/button";
+@import "./components/modal";
+
+//LAYOUT
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/about";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/portfolio";
+@import "./layout/footer";
