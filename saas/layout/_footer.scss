@@ -1,7 +1,7 @@
 /* Footer */
 
 .footer {
-    background-color: var(--background-second-color);
+    background-color: $background-second-color;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -47,7 +47,7 @@ address {
     
      & a:hover,
      & a:focus {
-         color: var(--link-hover-color);
+         color: $link-hover-color;
      }
 }
 
@@ -91,7 +91,7 @@ address {
 }
 
 .footer .social-icon {
-    fill: var(--main-background-color);
+    fill: $main-background-color;
 }
 
 .footer .social-link {
@@ -99,7 +99,7 @@ address {
 
     &:hover,
     &:focus {
-        background-color: var(--link-hover-color);
+        background-color: $link-hover-color;
     }
 }
 
@@ -110,7 +110,7 @@ address {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--main-background-color);
+    color: $main-background-color;
 }
 
 /* Footer subscription block */
@@ -145,7 +145,7 @@ address {
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
 
-        background-color: var(--background-second-color);
+        background-color: $background-second-color;
     }
 
     & input::placeholder {
@@ -174,14 +174,14 @@ address {
     font-size: 16px;
     line-height: calc(30 / 16);
     letter-spacing: 0.06em;
-    color: var(--main-background-color);
+    color: $main-background-color;
 
-    background-color: var(--link-hover-color);
+    background-color: $link-hover-color;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-        background-color: var(--button-hover-background);
+        background-color: $button-hover-background;
     }
 }
 
@@ -189,5 +189,5 @@ address {
 .subscription-icon {
     margin-left: 10px;
     background-size: contain;
-    fill: var(--main-background-color);
+    fill: $main-background-color;
 }

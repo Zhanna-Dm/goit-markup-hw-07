@@ -40,15 +40,15 @@
 }
 
 .logo-web {
-    color: var(--link-hover-color);
+    color: $link-hover-color;
 }
 
 .logo-studio-header {
-    color: var(--main-color);
+    color: $main-color;
 }
 
 .logo-studio-footer {
-    color: var(--main-background-color);
+    color: $main-background-color;
 }
 
 /* Nav styles, Contacts */
@@ -77,7 +77,7 @@
 
 
 a.current {
-    color: var(--link-hover-color);
+    color: $link-hover-color;
 }
 
 .header-list-item {
@@ -94,13 +94,13 @@ a.current {
     display: block;
     width: 100%;
     height: 4px;
-    background-color: var(--link-hover-color);
+    background-color: $link-hover-color;
     border-radius: 4px;
 }
 
 .active-link:hover,
 .active-link:focus {
-    color: var(--link-hover-color);
+    color: $link-hover-color;
 }
 
 .contacts-header .header-link {
@@ -114,7 +114,7 @@ a.current {
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
-    color: var(--text-grey-color);
+    color: $text-grey-color;
     display: flex;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -126,12 +126,12 @@ a.current {
 
 .header-contact-icon {
     margin-right: 10px;
-    fill: var(--icon-grey-color);
+    fill: $icon-grey-color;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .header-contact-link:hover .header-contact-icon,
 .header .header-contact-link:focus .header-contact-icon {
-    fill: var(--link-hover-color);
+    fill: $link-hover-color;
 }
