@@ -12,6 +12,10 @@ html {
     font-family: "Roboto", sans-serif;
     color: $main-color;
     background-color: $main-background-color;
+
+    @media  (min-width 800px) {
+        background-color: aqua;
+    }
 }
 
 .container {

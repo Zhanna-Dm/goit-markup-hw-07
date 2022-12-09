@@ -21,6 +21,11 @@ html {
   color: #212121;
   background-color: #ffffff;
 }
+@media (min-width 800px) {
+  .body {
+    background-color: aqua;
+  }
+}
 
 .container {
   width: 1200px;
