@@ -1,9 +1,11 @@
 //BASE
-@import "./base/variables.scss";
+@import "./utils/breakpoints";
 @import "./base/base.scss";
 
 //UTILS
+@import "./utils/variables.scss";
 @import "./utils/visually-hidden";
+
 
 //COMPONENTS
 @import "./components/button";
