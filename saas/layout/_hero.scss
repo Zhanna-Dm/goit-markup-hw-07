@@ -1,6 +1,6 @@
 /* Banner styles */
 
-.main-banner {
+.hero {
     padding-top: 200px;
     padding-bottom: 200px;
     width: 1600px;
@@ -11,12 +11,6 @@
     background-position: center;
     margin-right: auto;
     margin-left: auto;
-}
-
-.main-banner-text h2 {
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .button {
@@ -34,9 +28,7 @@
     cursor: pointer;
 }
 
-.main-banner-text {
-    display: inline-block;
-}
+
 
 .order-button:focus,
 .order-button:hover {
@@ -53,3 +45,14 @@
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+// .main-banner-text {
+//     display: inline-block;
+// }
+
+// .main-banner-text h2 {
+//     width: 1600px;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+

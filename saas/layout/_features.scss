@@ -1,6 +1,6 @@
 /* -Особливості- */
 
-.description {
+.features {
     padding-top: 94px;
     padding-bottom: 94px;
 
@@ -11,7 +11,7 @@
     }
 }
 
-.description-blocks {
+.features__items {
     display: flex;
 
     & li:not(:last-child) {
@@ -29,7 +29,7 @@
     }
 }
 
-.description-title {
+.features__title {
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -37,7 +37,7 @@
     text-transform: uppercase;
 }
 
-.desctiption-text {
+.features__text {
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
